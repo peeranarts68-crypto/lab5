@@ -20,25 +20,5 @@ public class Lab3 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        Note noteA = new Note();
-        Note noteB = new Note();
-
-        noteA.title = "dfdsfsg";
-        noteA.content = "dsfsg";
-        noteA.creatdData = "6 July 2026";
-        noteA.getSummary();
-
-        noteB.title = "";
-        noteB.content = "";
-        noteB.creatdData ="6 July 2026";
-        noteB.getSummary();
-
-        User user1 = new User();
-        user1.userId = (int) '1';
-        user1.username = "THOFUN";
-        user1.password = (int) '1';
-        user1.email = "thofun@gmail.com";
-
     }
 }

@@ -1,11 +1,30 @@
 package com.example.lab3;
 
-public class Note {
-    String title;
-    String content;
-    String creatdData;
+public abstract class Note {
+    private String title;
+    private String createdDate;
 
-    void getSummary() {
-        System.out.println(title+content+creatdData);
+    // Constructor
+    public Note(String title, String createdDate) {
+        this.title = title;
+        this.createdDate = createdDate;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public abstract void getSummary();
 }

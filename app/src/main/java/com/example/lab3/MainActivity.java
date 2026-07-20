@@ -20,26 +20,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Note myTextNote = new TextNote("Shopping List", "2026-07-20", "Buy milk, eggs, and bread.");
+        Note myChecklist = new CheckListNote("Project Tasks", "2026-07-20", "1. Code OOP  2. Design UI");
 
-        Note noteA = new Note();
-        Note noteB = new Note();
-        Note note1 = new Note();
+        myTextNote.getSummary();
+        myChecklist.getSummary();
 
-        noteA.title = "dfdsfsg";
-        noteA.content = "dsfsg";
-        noteA.creatdData = "6 July 2026";
-        noteA.getSummary();
 
-        noteB.title = "";
-        noteB.content = "";
-        noteB.creatdData ="6 July 2026";
-        noteB.getSummary();
-
-        User user1 = new User();
-        user1.userId = (int) '1';
-        user1.username = "THOFUN";
-        user1.password = (int) '1';
-        user1.email = "thofun@gmail.com";
 
     }
 }
